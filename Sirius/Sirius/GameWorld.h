@@ -1,6 +1,7 @@
 #pragma once
 
 class Renderer;
+class Input;
 
 enum class GameState { INIT, LOAD, PLAY, SAVE, CLOSE };
 
@@ -11,11 +12,12 @@ public:
 	~GameWorld();
 
 	void InitSystems();
-	void Update();
+	void ProcessInput();
 	void EndWorld();
 
 private:
 	GameState _gameState;
 	Renderer* _renderer;
+	Input* _input;
 };
 

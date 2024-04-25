@@ -11,6 +11,9 @@
     <Filter Include="Graphics">
       <UniqueIdentifier>{3d71907e-5951-498a-b4ad-75fa69ae3d5c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Input">
+      <UniqueIdentifier>{0dba0dd8-6ddf-4f07-8b86-e2a9af3caaa1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -22,6 +25,9 @@
     <ClCompile Include="GameWorld.cpp">
       <Filter>Game Demo</Filter>
     </ClCompile>
+    <ClCompile Include="Input\Input.cpp">
+      <Filter>Input</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Graphics\Renderer.h">
@@ -29,6 +35,9 @@
     </ClInclude>
     <ClInclude Include="GameWorld.h">
       <Filter>Game Demo</Filter>
+    </ClInclude>
+    <ClInclude Include="Input\Input.h">
+      <Filter>Input</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

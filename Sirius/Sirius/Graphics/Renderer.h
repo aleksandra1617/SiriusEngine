@@ -15,9 +15,11 @@ public:
 	Renderer(int winWidth = 1024, int winHight = 720);
 	~Renderer();
 
-	bool Init();
-	void Update();
-	void EndRender();
+	bool Init();	
+	virtual void Render();
+	void Cleanup();
+
+	GLFWwindow* GetMainWindow() { return _mainWindow; }
 
 	bool IsWindowClosing() 
 	{
@@ -27,7 +29,7 @@ public:
 protected:
 	GLFWwindow* _mainWindow;
 
-	virtual void Render();
+
 
 	GLFWwindow* CreateWindow();
 
