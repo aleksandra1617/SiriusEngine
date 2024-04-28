@@ -5,6 +5,8 @@
 
 struct GLFWwindow;
 
+class ShaderHandler;
+
 /// Will be used to create loading bar and keep track of what the graphics system is doing. 
 enum class GraphicsStage { NONE, INIT, LOAD_VERT_DATA, COMPILE_SHADERS, RENDER };
 
@@ -29,19 +31,19 @@ public:
 protected:
 	GLFWwindow* _mainWindow;
 
-
-
 	GLFWwindow* CreateWindow();
 
 private:
 	int _winWidth, _winHight;
 
 	/*
-	*	Defining integer constants to improve readability. Any integers
-	*	found in the code should be counting numbers, not ids.
+	*	Use GLuint for IDs.
 	*/
-	const int _NULLID{ 0 };
-	unsigned int _vbo; //Vertex Buffer Object ID
+	GLuint _vbo, _vao; //Vertex Buffer Object ID and Vertex Array Object ID
+	GLuint _shaderProgram;
+	GraphicsStage _graphicsStage;	
+	
+	ShaderHandler* _shaderHandler;
 
-	GraphicsStage _graphicsStage;
+	bool InitGLFW();
 };

@@ -14,6 +14,9 @@
     <Filter Include="Input">
       <UniqueIdentifier>{0dba0dd8-6ddf-4f07-8b86-e2a9af3caaa1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Graphics\Shaders">
+      <UniqueIdentifier>{55367678-2c2b-488b-930d-8c79e48be7d4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -28,6 +31,9 @@
     <ClCompile Include="Input\Input.cpp">
       <Filter>Input</Filter>
     </ClCompile>
+    <ClCompile Include="Graphics\ShaderHandler.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Graphics\Renderer.h">
@@ -39,5 +45,16 @@
     <ClInclude Include="Input\Input.h">
       <Filter>Input</Filter>
     </ClInclude>
+    <ClInclude Include="Graphics\ShaderHandler.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Graphics\Shaders\TriangleShader.fs">
+      <Filter>Graphics\Shaders</Filter>
+    </None>
+    <None Include="Graphics\Shaders\TriangleShader.vs">
+      <Filter>Graphics\Shaders</Filter>
+    </None>
   </ItemGroup>
 </Project>

@@ -129,13 +129,19 @@
   <ItemGroup>
     <ClCompile Include="GameWorld.cpp" />
     <ClCompile Include="Graphics\Renderer.cpp" />
+    <ClCompile Include="Graphics\ShaderHandler.cpp" />
     <ClCompile Include="Input\Input.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameWorld.h" />
     <ClInclude Include="Graphics\Renderer.h" />
+    <ClInclude Include="Graphics\ShaderHandler.h" />
     <ClInclude Include="Input\Input.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Graphics\Shaders\TriangleShader.fs" />
+    <None Include="Graphics\Shaders\TriangleShader.vs" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
